@@ -1,5 +1,7 @@
 import { useContext } from "react";
 import { DataContext } from "./App";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faClipboard } from "@fortawesome/free-solid-svg-icons";
 
 const FactBox = () => {
   const factData = useContext(DataContext);
@@ -14,6 +16,7 @@ const FactBox = () => {
         }}
       >
         Copy to clipboard
+        <FontAwesomeIcon style={{ marginLeft: "12px" }} icon={faClipboard} />
       </button>
     </div>
   );
