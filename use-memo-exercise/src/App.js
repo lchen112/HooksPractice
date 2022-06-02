@@ -1,7 +1,7 @@
 import "./App.css";
 import { useFetch } from "./useFetch";
 import { createContext, useCallback, useState } from "react";
-import Child from "./Child";
+import GenerateFactButton from "./GenerateFactButton";
 import FactBox from "./FactBox";
 import { useKeyPress } from "./useKeyPress";
 
@@ -22,7 +22,7 @@ function App() {
       <DataContext.Provider value={data}>
         <header className="App-header">
           <h1>Random Fact Generator</h1>
-          <Child incrementCount={incrementer} />
+          <GenerateFactButton incrementCount={incrementer} />
           <FactBox />
           <div
             style={{

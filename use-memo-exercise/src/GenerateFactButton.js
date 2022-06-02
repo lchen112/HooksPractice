@@ -1,7 +1,7 @@
 import { memo } from "react";
-import "./Child.css";
+import "./GenerateFactButton.css";
 
-const Child = (props) => {
+const GenerateFactButton = (props) => {
   const { incrementCount } = props;
   return (
     <button className="Generate-button" onClick={() => incrementCount()}>
@@ -10,4 +10,4 @@ const Child = (props) => {
   );
 };
 
-export default memo(Child);
+export default memo(GenerateFactButton);
